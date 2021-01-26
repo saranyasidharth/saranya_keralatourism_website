@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  #form
+  {
+    color: black;
+    align-items: center;
+    
+  }
+  
+  input[type=text] {
+    width: 25%;
+    padding: 10px;
+    resize: vertical;
+  }
+  input[type=password] {
+    width: 25%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+
+  input[type=submit] {
+    background-color:rgb(253, 253, 253);
+    border: rgb(48, 46, 138);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 15px;
+    color:rgb(18, 19, 18);
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgb(23, 131, 23);
+    color: white;
+    border: green;
+  }
+  
+  .frm {
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+    color: white;
+  }
+  

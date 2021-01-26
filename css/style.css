@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color:black;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  footer
+{
+  background-color:black;
+  color: #f9f9f9;
+  height: 6cm;
+  margin-top: 40%;
+  
+  
+}
+footer h3{
+ 
+  float: right;
+  text-align: justify;
+
+}
+.nature{
+  margin-left: 7cm;
+  text-align:start;
+}@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: rgb(0, 0, 0);
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 8vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid rgb(11, 21, 73);
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #000000;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}

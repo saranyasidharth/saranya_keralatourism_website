@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="./js/login.js";></script>
+<style>
+  
+  
+  .head-tag a
+  {
+     font-family:fantasy;
+     font-size: 20px;
+     text-decoration: none;
+     color: rgb(230, 227, 227);
+     border: 1px, solid white;
+     padding: 8px;
+     margin-right: 10px;
+  }
+ .head-tag a:hover
+  {
+    background-color:rgb(58, 67, 190);
+    color:white;
+    transition: .5s ease-in-out;
+  
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  
+  li {
+    float: left;
+  }
+  
+  </style>
+  <header>
+  <div class="head-tag" style="background: black;padding: .5cm; text-decoration: none;">
+      <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        <li class="dropdown">
+            <a href="./distrctfinal.html">Districts</a>
+    
+          </li>
+        <li><a href="#">Contact us</a> <li>
+    
+          </ul>
+          </div></header>
+</head>
+<body style="background: url(https://i.pinimg.com/originals/e4/33/b1/e433b14e4c2060cd9cce155975393379.jpg);">
+    <form action="./distrctfinal.html"  onsubmit="return registration()">
+      <div class="loginfrm" style="margin-left: 3cm; margin-top: 2cm;">
+        <div class="row mb-5">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-3">
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="row mb-2" >
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-3">
+            <input type="password" class="form-control" id="pwd">
+          </div>
+        </div>
+      
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 ">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 5cm;"><button type="submit" class="btn btn-primary" onclick="pasval()">Log in</button></div></fdiv>
+      </form>
+    
+</body>
+
+
+</html>
